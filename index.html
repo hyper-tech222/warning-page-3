@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>경고</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Malgun Gothic', sans-serif;
+      animation: flash 1.5s infinite;
+    }
+    @keyframes flash {
+      0%, 100% { background: #0a0000; }
+      50% { background: #1a0000; }
+    }
+    .box {
+      border: 5px solid #ff0000;
+      padding: 60px 80px;
+      text-align: center;
+      box-shadow: 0 0 80px #ff000099;
+      max-width: 750px;
+    }
+    .icon { font-size: 90px; }
+    h1 {
+      color: #ff0000;
+      font-size: 48px;
+      letter-spacing: 8px;
+      margin: 20px 0;
+      text-shadow: 0 0 30px #ff0000;
+    }
+    hr { border-color: #ff000055; margin: 20px 0; }
+    p {
+      color: #ff4444;
+      font-size: 22px;
+      line-height: 2;
+      font-weight: bold;
+    }
+    .blink {
+      color: #ff0000;
+      font-size: 26px;
+      animation: blink 0.8s step-start infinite;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="icon">🚨</div>
+    <h1>⚠ 경 고 ⚠</h1>
+    <hr>
+    <p class="blink">본 사이트는 불법성착취 유통사이트로<br>접속 시 강력 처벌됩니다</p>
+    <hr>
+    <p>귀하의 접속 정보(IP, 시간)가<br>자동으로 기록되고 있습니다</p>
+  </div>
+</body>
+</html>
